@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HW2_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine("__________Известный магазин__________");
+            Console.WriteLine("_____________________________________");
+            DateTime adate = DateTime.Now;   
+            Console.WriteLine($"                 ДАТА {adate.ToString("MM / dd / yyyy")}");
+            Console.WriteLine("_Цена_____Кол-во_________Итого__");
+            int a = 12;
+            int b = 3;
+            double d = a * b;
+            Console.WriteLine("Батон нарезной                       ");
+            Console.WriteLine($"   {a}       {b}              {d}    ");
+            double x = 89.37;
+            int y = 8;
+            double z = x * y;
+            Console.WriteLine("Шпроты в масле          ");
+            Console.WriteLine($"   {x}    {y}              {z}    ");
+            Console.WriteLine("                                ИТОГО:");
+            double itog = d + z;
+            Console.WriteLine($"                            {itog}:");
+            DateTime atime = DateTime.Now;
+            Console.WriteLine($"         Время операции {atime.ToString("HH / mm / ss  ")}");
+        }
+    }
+}
